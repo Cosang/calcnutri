@@ -1,0 +1,50 @@
+<html>
+
+	<head>
+		
+		<title>Calculator valori nutritionale</title>
+		
+		<meta charset="utf-8" />
+					
+		<script src="https://www.gstatic.com/charts/loader.js"></script> 
+		
+	</head>
+	
+	<body>
+		
+		
+		<div style="background-color:#dc3912">
+		
+			<h1 style='text-align:center; margin-top: 50px; font-family:Lucida Sans Unicode; color:white' > Calculator valori nutritionale </h1>
+	
+		</div>
+		
+		<form id="formular-filtrare" autocomplete="off">
+		
+			Alege alimentul:<select id="aliment">
+				<option value="select" selected style = 'color:gray'>--alege aliment--</option>
+				<option value="pizza">Pizza</option>
+				<option value="orez">Orez</option>
+				<option value="cheeseburger">Cheeseburger</option>
+				<option value="supa">Supa de pui</option>
+				</select>
+		
+		</form>
+		
+		 <form autocomplete="off">
+			Introduceti gramajul: <input type="number" name="gramaj" id = "gramaj" placeholder="Introduceti nr. gr." onkeypress='return validare_nr(event);'>
+		</form> 
+			
+			
+			<button id="calculeaza" onclick="calcul()">Calculeaza</button>
+						
+			<div id="rezultat"></div>
+
+			<div id="piechart"></div>
+		
+	
+	<script src="scripts.js"></script>
+	
+	</body>
+	
+</html>
