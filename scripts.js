@@ -11,95 +11,99 @@ function calcul(){
 	if (inputaliment =='pizza'){ 
 			
 		 window.rezultat_carbo = Number(inputgramaj) * 37/100;
-		
+		 document.getElementById("grCarbo").innerHTML = rezultat_carbo.toString();
 	} 
 	
 	if (inputaliment =='pizza'){ 
 			
 		window.rezultat_cal = Number(inputgramaj) * 330/100;
-		 
+		document.getElementById("nrCal").innerHTML = rezultat_cal.toString();
 	}    
 	
 	if (inputaliment =='pizza'){ 
 			
 		window.rezultat_proteine = Number(inputgramaj) * 11/100;
-	
+		document.getElementById("grProt").innerHTML = rezultat_proteine.toString();
 	} 
 	
 	if (inputaliment =='pizza'){ 
 			
 		window.rezultat_grasimi = Number(inputgramaj) * 16/100;
+		document.getElementById("grGras").innerHTML = rezultat_grasimi.toString();
 	} 
 	
 	else if (inputaliment =='orez'){ 
 			
 		window.rezultat_carbo = Number(inputgramaj) * 78/100;
-		 
+		document.getElementById("grCarbo").innerHTML = rezultat_carbo.toString(); 
 	}
 	
 	if (inputaliment =='orez'){ 
 			
 		window.rezultat_cal = Number(inputgramaj) * 410/100;
-		
+		document.getElementById("nrCal").innerHTML = rezultat_cal.toString();
 	}
 	
 	if (inputaliment =='orez'){
 		
 		window.rezultat_proteine = Number(inputgramaj) * 8/100;
-	
+		document.getElementById("grProt").innerHTML = rezultat_proteine.toString();
 	} 
 	
 	if (inputaliment =='orez'){
 		
 		window.rezultat_grasimi = Number(inputgramaj) * 0.6/100;
+		document.getElementById("grGras").innerHTML = rezultat_grasimi.toString();
 	}
 	
 		
 	else if (inputaliment =='cheeseburger'){ 
 			
 		window.rezultat_carbo = Number(inputgramaj) * 8/100;
-		 
+		document.getElementById("grCarbo").innerHTML = rezultat_carbo.toString(); 
 	}
 	
 	if (inputaliment =='cheeseburger'){ 
 			
 		window.rezultat_cal = Number(inputgramaj) * 78/100;
-		
+		document.getElementById("nrCal").innerHTML = rezultat_cal.toString();
 	}
 	
 	if (inputaliment =='cheeseburger'){
 		
 		window.rezultat_proteine = Number(inputgramaj) * 4/100;
-	
+		document.getElementById("grProt").innerHTML = rezultat_proteine.toString();
 	} 
 	
 	if (inputaliment =='cheeseburger'){
 		
 		window.rezultat_grasimi = Number(inputgramaj) * 3.3/100;
+		document.getElementById("grGras").innerHTML = rezultat_grasimi.toString();
 	}
 	
 	
 	else if (inputaliment =='supa'){ 
 			
 		window.rezultat_carbo = Number(inputgramaj) * 10.8/100;
-		 
+		document.getElementById("grCarbo").innerHTML = rezultat_carbo.toString();
 	}
 	
 	if (inputaliment =='supa'){ 
 			
 		window.rezultat_cal = Number(inputgramaj) * 61/100;
-		
+		document.getElementById("nrCal").innerHTML = rezultat_cal.toString();
 	}
 	
 	if (inputaliment =='supa'){
 		
 		window.rezultat_proteine = Number(inputgramaj) * 2.8/100;
-	
+		document.getElementById("grProt").innerHTML = rezultat_proteine.toString();
 	} 
 	
 	if (inputaliment =='supa'){
 		
 		window.rezultat_grasimi = Number(inputgramaj) * 0.7/100;
+		document.getElementById("grGras").innerHTML = rezultat_grasimi.toString();
 	}
 	
 	else if (inputaliment =='select' ){
@@ -139,6 +143,14 @@ function drawChart() {
 	
 }	
 	
+	
+function afisareTabel() { 
+        if(document.getElementById('tabel').style.display=='none') { 
+            document.getElementById('tabel').style.display='block'; 
+        } 
+        return false;
+    } 
+
 	
 
 //validare camp numeric
