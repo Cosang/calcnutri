@@ -8,6 +8,26 @@
 					
 		<script src="https://www.gstatic.com/charts/loader.js"></script> 
 		
+	<style>
+ th, td {
+	border: 1px solid black;
+	padding: 8px;
+	border-collapse: collapse;
+	
+}
+
+table {
+	
+	
+	padding-left: 550px;
+	padding-top: 0px;
+	position: absolute;
+	top: 250px;
+	
+}
+
+</style>	
+	
 	</head>
 	
 	<body>
@@ -19,9 +39,9 @@
 	
 		</div>
 		
-		<form id="formular-filtrare" autocomplete="off">
+		<form id="formular-filtrare" autocomplete="off" class="formular-filtrare">
 		
-			Alege alimentul:<select id="aliment">
+			Alege alimentul: <select id="aliment">
 				<option value="select" selected style = 'color:gray'>--alege aliment--</option>
 				<option value="pizza">Pizza</option>
 				<option value="orez">Orez</option>
@@ -36,9 +56,31 @@
 		</form> 
 			
 			
-			<button id="calculeaza" onclick="calcul()">Calculeaza</button>
-						
-			<div id="rezultat"></div>
+			<button id="calculeaza" onclick="calcul(); afisareTabel()">Calculeaza</button>
+			
+			<div id = "tabel", style = "display:none">
+				<table class = "tabel">
+					
+					<tr>
+					<td>Carbohidrati (gr)</td>
+					<td id = "grCarbo">...</td>
+					</tr>
+					<tr>
+					<td>Calorii</td>
+					<td id = "nrCal">...</td>
+					</tr>
+					<tr>
+					<td>Proteine (gr)</td>
+					<td id = "grProt">...</td>
+					</tr>
+					<tr>
+					<td>Grasimi (gr)</td>
+					<td id = "grGras">...</td>
+					</tr>
+  				</table>
+			
+			</div>
+			
 
 			<div id="piechart"></div>
 		
